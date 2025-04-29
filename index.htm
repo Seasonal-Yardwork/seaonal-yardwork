@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Seasonal Yard Work&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://cdn.jsdelivr.net/npm/@preline/preline@2.0.0/dist/preline.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>tailwind.config = {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>theme: {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>extend: {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>colors: {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>primary: '#626F47',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>secondary: '#A4B465',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>light: '#F5ECD5',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>accent: '#F0BB78',</p>
+<p class="p1"><span class="Apple-converted-space">          </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body class="bg-light text-primary"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Navigation --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;nav class="bg-primary text-white p-4 shadow-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto flex justify-between items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1 class="text-2xl font-bold"&gt;Seasonal Yard Work&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="hidden md:flex space-x-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#about" class="hover:text-accent transition"&gt;About Us&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#services" class="hover:text-accent transition"&gt;Services&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#pricing" class="hover:text-accent transition"&gt;Pricing&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#contact" class="hover:text-accent transition"&gt;Contact&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="md:hidden text-2xl" id="menu-btn"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;i class="fas fa-bars"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Mobile menu --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="md:hidden hidden bg-primary-light w-full py-2" id="mobile-menu"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container mx-auto flex flex-col space-y-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#about" class="block px-4 py-2 hover:bg-primary-dark"&gt;About Us&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#services" class="block px-4 py-2 hover:bg-primary-dark"&gt;Services&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#pricing" class="block px-4 py-2 hover:bg-primary-dark"&gt;Pricing&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#contact" class="block px-4 py-2 hover:bg-primary-dark"&gt;Contact&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Hero Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;header class="bg-secondary text-white py-20 px-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="text-4xl font-bold mb-4"&gt;Professional Yard Care Services&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="text-xl mb-8"&gt;Helping fund our wrestling and soccer team gear through quality yard work&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#contact" class="bg-accent text-primary font-bold px-6 py-3 rounded-lg hover:bg-opacity-90 transition"&gt;Book Now&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- About Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="about" class="py-16 px-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="text-3xl font-bold mb-8 text-center"&gt;About Us&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="text-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>We are a team of dedicated wrestlers and soccer players working hard to raise money for our team gear.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>We take pride in providing quality yard work services to help fund our athletic pursuits while keeping</p>
+<p class="p1"><span class="Apple-converted-space">          </span>your outdoor spaces looking their best.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Services Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="services" class="py-16 px-4 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="text-3xl font-bold mb-12 text-center"&gt;Our Services&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-light p-6 rounded-lg shadow-md hover:shadow-lg transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="text-4xl text-accent mb-4"&gt;&lt;i class="fas fa-leaf"&gt;&lt;/i&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Lawn Mowing&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Professional lawn cutting to keep your grass looking neat and healthy.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-light p-6 rounded-lg shadow-md hover:shadow-lg transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="text-4xl text-accent mb-4"&gt;&lt;i class="fas fa-tree"&gt;&lt;/i&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Leaf Raking&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Thorough leaf removal to keep your yard clean and prevent lawn damage.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-light p-6 rounded-lg shadow-md hover:shadow-lg transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="text-4xl text-accent mb-4"&gt;&lt;i class="fas fa-cut"&gt;&lt;/i&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Weed Eating&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Precision trimming around edges, fences, and hard-to-reach areas.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-light p-6 rounded-lg shadow-md hover:shadow-lg transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="text-4xl text-accent mb-4"&gt;&lt;i class="fas fa-seedling"&gt;&lt;/i&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Bush Trimming&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Shaping and pruning bushes for a manicured landscape appearance.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-light p-6 rounded-lg shadow-md hover:shadow-lg transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="text-4xl text-accent mb-4"&gt;&lt;i class="fas fa-snowplow"&gt;&lt;/i&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Snow Shoveling&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Driveway and walkway clearing during winter months.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-light p-6 rounded-lg shadow-md hover:shadow-lg transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="text-4xl text-accent mb-4"&gt;&lt;i class="fas fa-broom"&gt;&lt;/i&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="text-xl font-bold mb-2"&gt;General Cleanup&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Whatever your yard needs - we've got you covered!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Pricing Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="pricing" class="py-16 px-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="text-3xl font-bold mb-8 text-center"&gt;Pricing&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="text-lg text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Our services are priced between &lt;span class="font-bold text-accent"&gt;$30 and $55&lt;/span&gt; depending on the size of the job and specific requirements.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="mt-4 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Contact us for a free estimate tailored to your yard's needs!</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Contact Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="contact" class="py-16 px-4 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="text-3xl font-bold mb-12 text-center"&gt;Contact Us&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-light p-8 rounded-lg shadow-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="text-xl font-bold mb-4"&gt;Get In Touch&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;i class="fas fa-phone-alt text-accent mt-1 mr-3"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4 class="font-bold"&gt;Phone&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="tel:5398959754" class="hover:text-accent transition"&gt;(539) 895-9754&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;i class="fab fa-instagram text-accent mt-1 mr-3"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4 class="font-bold"&gt;Instagram&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://instagram.com/elijah_tol09" target="_blank" class="hover:text-accent transition"&gt;@elijah_tol09&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-light p-8 rounded-lg shadow-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="text-xl font-bold mb-4"&gt;Book an Appointment&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;form action="https://formsubmit.co/elijahtolander3@gmail.com" method="POST" class="space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="hidden" name="_captcha" value="false"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;label for="name" class="block mb-1"&gt;Name&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;input type="text" id="name" name="name" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-accent" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;label for="email" class="block mb-1"&gt;Email&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;input type="email" id="email" name="email" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-accent" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;label for="service" class="block mb-1"&gt;Service Needed&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;select id="service" name="service" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-accent" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;option value=""&gt;Select a service&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;option value="mowing"&gt;Lawn Mowing&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;option value="raking"&gt;Leaf Raking&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;option value="weeding"&gt;Weed Eating&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;option value="trimming"&gt;Bush Trimming&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;option value="snow"&gt;Snow Shoveling&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;option value="other"&gt;Other&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;label for="message" class="block mb-1"&gt;Message&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;textarea id="message" name="message" rows="3" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-accent" required&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button type="submit" class="bg-accent text-primary font-bold px-6 py-2 rounded-lg hover:bg-opacity-90 transition"&gt;Submit&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Footer --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer class="bg-primary text-white py-8 px-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&amp;copy; 2023 Seasonal Yard Work. All rights reserved.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="mt-2"&gt;Helping fund our team gear one yard at a time!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const menuBtn = document.getElementById('menu-btn');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const mobileMenu = document.getElementById('mobile-menu');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>menuBtn.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>mobileMenu.classList.toggle('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
